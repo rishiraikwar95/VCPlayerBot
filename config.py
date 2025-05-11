@@ -34,10 +34,10 @@ class Config:
     ADMIN = os.environ.get("ADMINS", '')
     SUDO = [int(admin) for admin in (ADMIN).split()] # Exclusive for heroku vars configuration.
     ADMINS = [int(admin) for admin in (ADMIN).split()] #group admins will be appended to this list.
-    API_ID = int(os.environ.get("API_ID", ''))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")     
-    SESSION = os.environ.get("SESSION_STRING", "")
+    API_ID = int(os.environ.get("API_ID", '', "21558791"))
+    API_HASH = os.environ.get("API_HASH", "bb24d5a1d5ecc2d8eda222e1b9589f42")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7840488501:AAHYmcz64xJ14KZBadbGl5QAZiS5bWo2pwa")     
+    SESSION = os.environ.get("SESSION_STRING", "snapchatpornbot")
 
     #Stream Chat and Log Group
     CHAT = int(os.environ.get("CHAT", ""))
